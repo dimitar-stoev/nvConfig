@@ -25,13 +25,18 @@ return {
       -- it is mapped to <C-J> in lua/mappings.lua
     end
   },
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "mfussenegger/nvim-jdtls",
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css", "javascript", "typescript",
+        "json", "yaml", "markdown", "markdown_inline",
+        "java", "cpp", "c", "rust", "go"
+  		},
+  	},
+  },
 }
